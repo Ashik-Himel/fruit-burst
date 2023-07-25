@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fruit Burst</title>
   <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+  <!-- Fontawesome's CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
   <!-- Tailwind CSS's CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Daisy UI's CDN -->
@@ -14,7 +20,31 @@
   <script>
     tailwind.config = {
       theme: {
-        extend: {}
+        extend: {
+          fontFamily: {
+            lato: "'Lato', sans-serif"
+          },
+          colors: {
+            primary: '#F85559',
+            title: '#121212',
+            'dark-1': 'rgba(18, 18, 18, 0.60)',
+            'dark-2': 'rgba(18, 18, 18, 0.80)',
+            'overly-2': 'rgba(18, 18, 18, 0.70)'
+          },
+          backgroundImage: {
+            'overly-1': 'linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)'
+          }
+        },
+        container: {
+          center: true,
+          padding: {
+            DEFAULT: '1.5rem',
+            md: '2rem',
+            lg: '4rem',
+            xl: '5rem',
+            '2xl': '6rem'
+          }
+        }
       }
     }
   </script>
@@ -22,8 +52,64 @@
   <style type="text/tailwindcss"></style>
 </head>
 
-<body>
+<body class="font-lato font-normal">
+  <!-- Navigation Section -->
+  <nav class="mt-4 lg:mt-8">
+    <div class="container">
+      <div class="drawer">
+        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+        <div class="drawer-content flex flex-col">
+          <!-- Navbar -->
+          <div class="w-full navbar justify-between flex-row-reverse lg:flex-row lg:bg-primary lg:text-white lg:rounded-[50px] lg:px-4">
+            <div class="flex-none lg:hidden">
+              <label for="my-drawer-3" class="btn btn-square btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+              </label>
+            </div>
+            <div class="flex-none hidden lg:block">
+              <ul class="menu menu-horizontal text-base [&>li>a]:hover:bg-primary [&>li>a]:hover:text-white">
+                <!-- Navbar menu content here -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#all-fruits">All Fruits</a></li>
+              </ul>
+            </div>
+            <a href="#home" class="flex items-center gap-2">
+              <img src="./images/logo.png" alt="Logo Icon" class="w-10">
+              <span class="text-2xl font-bold">Fruit Burst</span>
+            </a>
+            <form action="#" class="hidden bg-white text-title py-2 pr-8 rounded-3xl lg:flex">
+              <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-8 pr-4 rounded-l-3xl" required>
+              <button type="submit">
+                <i class="fa-solid fa-magnifying-glass text-title"></i>
+              </button>
+            </form>
+          </div>
+          <!-- Page content here -->
 
+        </div> 
+        <div class="drawer-side">
+          <label for="my-drawer-3" class="drawer-overlay"></label> 
+          <ul class="menu px-6 w-4/5 max-w-[350px] h-full bg-base-200 text-base justify-center items-center">
+            <!-- Sidebar content here -->
+            <li class="mb-6">
+              <form action="#" class="bg-white border-[2px] border-gray-300 text-title py-2 pr-4 rounded-3xl lg:flex justify-between">
+                <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-4 pr-4 rounded-l-3xl w-full" required>
+                <button type="submit">
+                  <i class="fa-solid fa-magnifying-glass text-title"></i>
+                </button>
+              </form>
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#all-fruits">All Fruits</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
 </body>
 
 </html>
