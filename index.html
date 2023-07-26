@@ -66,131 +66,133 @@
 </head>
 
 <body class="font-lato font-normal text-base text-dark-1">
-  <!-- Navigation Section -->
-  <nav class="mt-4 lg:mt-8">
-    <div class="container">
-      <div class="drawer">
-        <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
-        <div class="drawer-content flex flex-col">
-          <!-- Navbar -->
-          <div class="w-full navbar justify-between flex-row-reverse lg:flex-row lg:bg-primary lg:text-white lg:rounded-[50px] lg:pl-4 lg:pr-6 lg:py-3">
-            <div class="flex-none lg:hidden">
-              <label for="my-drawer-3" class="btn btn-square btn-ghost text-title">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-              </label>
-            </div>
-            <div class="flex-none hidden lg:block">
-              <ul class="menu menu-horizontal text-base [&>li>a]:hover:bg-primary [&>li>a]:hover:text-white">
-                <!-- Navbar menu content here -->
+  <!-- Header Section -->
+  <header>
+      <!-- Navigation Section -->
+      <nav class="mt-4 lg:mt-8">
+        <div class="container">
+          <div class="drawer">
+            <input id="my-drawer-3" type="checkbox" class="drawer-toggle" /> 
+            <div class="drawer-content flex flex-col">
+              <!-- Navbar -->
+              <div class="w-full navbar justify-between flex-row-reverse lg:flex-row lg:bg-primary lg:text-white lg:rounded-[50px] lg:pl-4 lg:pr-6 lg:py-3">
+                <div class="flex-none lg:hidden">
+                  <label for="my-drawer-3" class="btn btn-square btn-ghost text-title">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-6 h-6 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                  </label>
+                </div>
+                <div class="flex-none hidden lg:block">
+                  <ul class="menu menu-horizontal text-base [&>li>a]:hover:bg-primary [&>li>a]:hover:text-white">
+                    <!-- Navbar menu content here -->
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#all-fruits">All Fruits</a></li>
+                  </ul>
+                </div>
+                <a href="#home" class="flex items-center gap-2">
+                  <img src="./images/logo.png" alt="Logo Icon" class="w-10">
+                  <span class="text-2xl font-bold text-title lg:text-white">Fruit Burst</span>
+                </a>
+                <form action="#" class="hidden bg-white text-title py-2 pr-4 rounded-3xl lg:flex">
+                  <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-6 pr-4 rounded-l-3xl" required>
+                  <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass text-title"></i>
+                  </button>
+                </form>
+              </div>
+            </div> 
+            <div class="drawer-side z-10">
+              <label for="my-drawer-3" class="drawer-overlay"></label> 
+              <ul class="menu px-6 w-4/5 max-w-[350px] h-full bg-base-200 text-base justify-center items-center">
+                <!-- Sidebar content here -->
+                <li class="mb-6">
+                  <form action="#" class="bg-white border-[2px] border-gray-300 text-title py-2 pr-4 rounded-3xl lg:flex justify-between">
+                    <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-2 pr-2 rounded-l-3xl w-full" required>
+                    <button type="submit">
+                      <i class="fa-solid fa-magnifying-glass text-title"></i>
+                    </button>
+                  </form>
+                </li>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#all-fruits">All Fruits</a></li>
               </ul>
             </div>
-            <a href="#home" class="flex items-center gap-2">
-              <img src="./images/logo.png" alt="Logo Icon" class="w-10">
-              <span class="text-2xl font-bold text-title lg:text-white">Fruit Burst</span>
-            </a>
-            <form action="#" class="hidden bg-white text-title py-2 pr-4 rounded-3xl lg:flex">
-              <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-6 pr-4 rounded-l-3xl" required>
-              <button type="submit">
-                <i class="fa-solid fa-magnifying-glass text-title"></i>
-              </button>
-            </form>
           </div>
-        </div> 
-        <div class="drawer-side z-10">
-          <label for="my-drawer-3" class="drawer-overlay"></label> 
-          <ul class="menu px-6 w-4/5 max-w-[350px] h-full bg-base-200 text-base justify-center items-center">
-            <!-- Sidebar content here -->
-            <li class="mb-6">
-              <form action="#" class="bg-white border-[2px] border-gray-300 text-title py-2 pr-4 rounded-3xl lg:flex justify-between">
-                <input type="search" name="search" id="search" placeholder="Search here" class="focus:outline-none h-full pl-2 pr-2 rounded-l-3xl w-full" required>
-                <button type="submit">
-                  <i class="fa-solid fa-magnifying-glass text-title"></i>
-                </button>
-              </form>
-            </li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#all-fruits">All Fruits</a></li>
-          </ul>
         </div>
-      </div>
-    </div>
-  </nav>
+      </nav>
+      <!-- Banner Section -->
+      <section class="mt-8">
+        <div class="container">
+          <div class="carousel w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <div class="w-full bg-[url('./images/banner1.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-angle-left"></i>
+                </a> 
+                <a href="#slide2" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <div class="w-full bg-[url('./images/banner2.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-angle-left"></i>
+                </a> 
+                <a href="#slide3" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <div class="w-full bg-[url('./images/banner3.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-angle-left"></i>
+                </a> 
+                <a href="#slide4" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div> 
+            <div id="slide4" class="carousel-item relative w-full">
+              <div class="w-full bg-[url('./images/banner4.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
+                <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
+                <p>We supply highly quality organic products</p>
+                <a href="#shop" class="btn btn-primary">Shop Now</a>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-angle-left"></i>
+                </a> 
+                <a href="#slide1" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  </header>
 
   <main>
-    <!-- Banner Section -->
-  <section class="mt-8">
-    <div class="container">
-      <div class="carousel w-full">
-        <div id="slide1" class="carousel-item relative w-full">
-          <div class="w-full bg-[url('./images/banner1.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
-            <p>We supply highly quality organic products</p>
-            <a href="#shop" class="btn btn-primary">Shop Now</a>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide4" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-angle-left"></i>
-            </a> 
-            <a href="#slide2" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
-        </div> 
-        <div id="slide2" class="carousel-item relative w-full">
-          <div class="w-full bg-[url('./images/banner2.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
-            <p>We supply highly quality organic products</p>
-            <a href="#shop" class="btn btn-primary">Shop Now</a>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide1" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-angle-left"></i>
-            </a> 
-            <a href="#slide3" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
-        </div> 
-        <div id="slide3" class="carousel-item relative w-full">
-          <div class="w-full bg-[url('./images/banner3.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
-            <p>We supply highly quality organic products</p>
-            <a href="#shop" class="btn btn-primary">Shop Now</a>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide2" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-angle-left"></i>
-            </a> 
-            <a href="#slide4" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
-        </div> 
-        <div id="slide4" class="carousel-item relative w-full">
-          <div class="w-full bg-[url('./images/banner4.png'),_linear-gradient(180deg,_#121212,_transparent)] bg-blend-overlay bg-center text-white space-y-4 rounded-xl px-6 pt-12 pb-12 md:pt-16 md:pb-16 lg:pb-40 text-center [&>*]:max-w-[600px] [&>*]:mx-auto">
-            <h1 class="text-4xl md:text-6xl font-black">Exotic tastes at your doorstep</h1>
-            <p>We supply highly quality organic products</p>
-            <a href="#shop" class="btn btn-primary">Shop Now</a>
-          </div>
-          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-            <a href="#slide3" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-angle-left"></i>
-            </a> 
-            <a href="#slide1" class="btn btn-circle bg-title text-white hover:bg-white hover:text-title border-title text-2xl">
-              <i class="fa-solid fa-chevron-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
   <!-- Fruits Card Section -->
   <section class="relative -top-28 hidden lg:block text-dark-2">
     <div class="container">
@@ -575,6 +577,32 @@
     </div>
   </section>
   </main>
+
+  <!-- Footer Section -->
+  <footer class="mt-12 lg:mt-20 py-12 lg:py-20 bg-title text-white text-center">
+    <div class="container space-y-8">
+      <a href="#home" class="flex items-center justify-center gap-2">
+        <img src="./images/logo.png" alt="Logo Icon" class="w-10">
+        <span class="text-2xl font-bold">Fruit Burst</span>
+      </a>
+      <ul class="flex flex-wrap gap-6 justify-center items-center">
+        <li><a href="#home" class="hover:text-primary">Home</a></li>
+        <li><a href="#about" class="hover:text-primary">About Us</a></li>
+        <li><a href="#shop" class="hover:text-primary">Shop</a></li>
+        <li><a href="#all-fruits" class="hover:text-primary">All Fruits</a></li>
+        <li><a href="#support" class="hover:text-primary">Support</a></li>
+        <li><a href="#account" class="hover:text-primary">My Account</a></li>
+      </ul>
+      <ul class="flex flex-wrap gap-6 justify-center items-center text-3xl">
+        <li><a href="#"><i class="fa-brands fa-facebook text-[#3b5998] hover:scale-125 transition-transform duration-300"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-twitter text-[#00acee] hover:scale-125 transition-transform duration-300"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-square-instagram text-[#d62976] hover:scale-125 transition-transform duration-300"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-linkedin text-[#0072b1] hover:scale-125 transition-transform duration-300"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube text-[#CD201F] hover:scale-125 transition-transform duration-300"></i></a></li>
+        <li><a href="#"><i class="fa-brands fa-apple text-white hover:scale-125 transition-transform duration-300"></i></a></li>
+      </ul>
+    </div>
+  </footer>
 </body>
 
 </html>
